@@ -15,9 +15,3 @@ export default {
   }
 }
 </script>
-<style>
-#recharge {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-}
-</style>
