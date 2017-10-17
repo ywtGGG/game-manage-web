@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src={src}>
+    <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <el-button @click.native="startHacking">Yes!</el-button>
   </div>
@@ -10,8 +10,7 @@
 export default {
   data () {
     return {
-      msg: 'Want something new?',
-      src: '/static/logo.png'
+      msg: 'Want something new?'
     }
   },
 
