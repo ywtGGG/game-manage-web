@@ -2,14 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>游戏管理系统</title>
 </head>
 
-<body>
+<body id="particles-js" style="margin: 0px;background-color: #4DD0E1;">
   <div id="app">
-  	233
   </div>
 </body>
-
+<script src="particles.js"></script>
+<script>
+	particlesJS.load('particles-js', 'particles.json', function() {
+  		console.log('callback - particles.js config loaded');
+	});
+</script>
 </html>

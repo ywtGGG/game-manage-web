@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import VueRouter from 'vue-router';
+import axios from "axios"
 import 'element-ui/lib/theme-default/index.css'
 import App from '~/app.vue'
 
@@ -9,17 +10,23 @@ import recharge from '~/page/recharge/recharge.vue';
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
+Vue.prototype.$axios = axios
 
 
-const routes = [
-{ path: '/recharge', component: recharge }
-];
-
-//创建路由实例
+//创建路由
 const router = new VueRouter({
-routes  
-});
+	mode:'history',
+  	routes: [
+    		{
+     		path: '/recharge',
+      		component: recharge
+    		}
+  	]
+})
 
+// axios 配置
+axios.defaults.timeout = 5000;
+axios.defaults.baseURL = 'http://127.0.0.1:8080';
 
 new Vue({
 el: '#app',

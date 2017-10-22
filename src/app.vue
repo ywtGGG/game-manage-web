@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-  	hello world!
-  	<div class="content">
+  	<div class="navbar" >
         <router-link to="/recharge">充值</router-link>
     </div>
     <router-view></router-view>
   </div>
 </template>
 
-
-
 <style>
-#app {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-}
+	#app {
+  		font-family: Helvetica, sans-serif;
+  		text-align: center;
+	}
 </style>
