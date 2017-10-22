@@ -7,14 +7,25 @@
   <title>游戏管理系统</title>
 </head>
 
-<body id="particles-js" style="margin: 0px;background-color: #4DD0E1;">
+<body id="particles-js">
   <div id="app">
   </div>
 </body>
 <script src="particles.js"></script>
+</html>
+
 <script>
 	particlesJS.load('particles-js', 'particles.json', function() {
-  		console.log('callback - particles.js config loaded');
+		console.log('callback - particles.js config loaded');
 	});
 </script>
-</html>
+<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+		color: #ccc;
+		background-image: url(body_bg.jpeg);
+		background-size: cover;
+	}
+	
+</style>

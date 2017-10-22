@@ -177,7 +177,8 @@
 		vertical-align: middle;
 		float: left;
 		font-size: 16px;
-		color: #00070f;
+		/*color: #00070f;*/
+		color: #FAFAFA;
 		line-height: 1;
 		padding: 11px 12px 11px 0;
 		box-sizing: border-box;
